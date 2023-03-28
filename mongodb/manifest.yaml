@@ -10,7 +10,7 @@ spec:
   containers:
     - name: web
       imagePullPolicy: Always 
-      image: avinashaddepalli24/web:k8
+      image: avinashaddepalli24/web
       resources:
        requests:
         cpu: "100m"
@@ -35,4 +35,3 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 80
----
