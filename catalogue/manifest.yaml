@@ -8,17 +8,16 @@ metadata:
     tier: app
 spec:
   containers:
-    - name: catalogue
-      imagePullPolicy: Always 
-      image: avinashaddepalli24/catalogue:k8
-      resources:
-       requests:
-        cpu: "100m"
-        memory: "128Mi"
-       limits:
-        cpu:"100m"
-        memory:"128Mi"
-
+  - name: catalogue
+    imagePullPolicy: Always 
+    image: avinashaddepalli24/catalogue:k8
+    resources:
+    requests:
+      cpu: "100m"
+      memory: "128Mi"
+    limits:
+      cpu:"100m"
+      memory:"128Mi"
 ---
 apiVersion: v1
 kind: Service
