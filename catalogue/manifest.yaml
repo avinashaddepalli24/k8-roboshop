@@ -4,7 +4,7 @@ kind: Pod
 metadata:
   name: catalogue
   labels:
-    name: web
+    name: catalogue
     tier: app
 spec:
   containers:
